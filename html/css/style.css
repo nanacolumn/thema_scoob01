@@ -1,0 +1,51 @@
+/* CSS Document */
+
+@charset "UTF-8";
+#contents article {
+	float:left;
+	margin-right:25px;
+	width:200px;
+	margin-bottom:40px;
+}
+#contents article .icatch {
+	padding:2px 2px 5px;
+}
+#contents article .art {
+	background:url(../image/shadow.gif) left bottom no-repeat #F1AFB2;
+}
+#contents article .tech {
+	background:url(../image/shadow.gif) left bottom no-repeat #9DD0CD;
+}
+#contents article .other {
+	background:url(../image/shadow.gif) left bottom no-repeat #FFD24D;
+}
+#contents article h1 {
+	font-size:16px;
+	line-height:120%;
+	padding-bottom:10px;
+	width:180px;
+	margin:0 auto;
+	font-weight:normal;
+}
+#contents article p {
+	font-size:14px;
+	line-height:160%;
+}
+#contents article time {
+	display:block;
+	margin-bottom:5px;
+	color:#f00;
+	font-size:13px;
+}
+td.sun {
+	color:#f00;
+}
+
+.osaka:after{
+   content: url(../image/ic_area_osaka.gif) no-repeat;
+   width:33px;
+   height:17px;
+   position:absolute;
+   top:0px;
+   left:0px;
+}

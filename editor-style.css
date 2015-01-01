@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* font
+--------------------------------------------------------------- */
+html {
+	background: #fbfbfb;
+}
+
+body {
+	color:#000;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 14px;
+	max-width: 650px;
+	margin: auto;
+	padding: 20px 10px;
+	background: #fff;
+	border-left: #cfcfcf;
+	border-right: #cfcfcf;
+	text-align: justify;
+	text-justify: distribute;
+}	
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.0em;
+}
+a {text-decoration: none;}
+a:link {color: #505050;}
+a:visited {color: #505050;}
+a:hover {color: #707070; text-decoration: underline;}
+a:active {color: #707070;}
+a img {border: 0;}
+
+p {
+	line-height: 160%;
+}
+a {
+	color: #147595;
+	text-decoration: none;
+}
+h1 {
+	font-size: 18px;
+	line-height: 1.3em;
+	font-weight: bold;
+	padding-top: 20px;
+}
+h2 {
+	font-size: 18px;
+	line-height: 1.3em;
+	font-weight: bold;
+	padding-top: 20px;
+}
+h3 {
+	font-size: 15px;
+	line-height: 1.3em;
+	font-weight: bold;
+	padding-top: 18px;
+}
+h4 {
+	font-size: 12px;
+	line-height: 1.3em;
+	font-weight: bold;
+	padding-top: 15px;
+}
+blockquote {
+	width: 650px;
+    padding: 20px 0;
+    margin: 0;
+    color: #707070;
+    background: url(images/blockquote.png) top left no-repeat #f1f1f1;
+	border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+blockquote p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* note */
+
+#blog-contents {
+	width: 90%;
+	margin: auto;
+	text-align: left;
+}
+.post-php {
+  margin-bottom: 100px;
+}
+.post-php .post_meta {
+  overflow: hidden;
+}
+.post-php .post_meta .date {
+  display: block;
+}
+.post-php .post_meta .date span {
+}
+.post-php .post_meta .date span.month_day {
+  padding-top: 4px;
+  border-top: 1px solid #bbb;
+  font-size: 12px;
+}
+.post-php .post_meta .post_title {
+  font-size: 17px;
+}
+.post-php .post_meta .post_title a {
+  color: #221e1f;
+}
+.post-php .post_meta .post_cat {
+  float:left;
+}
+.post-php .post_meta .post_cat li {
+display: inline;
+}
+.post-php .post_meta .post_cat li a {
+  display: inline-block;
+  font-size: 11px;
+  margin: 0 5px 0 0;
+}
+.post-php .post {
+  font-family: 'Open Sans', 'モリサワ新ゴR', 'Droid Sans', HiraKakuProN-W3, 'Hiragino Kaku Gothic Pro', meiryo, 'IPAexGothic', 'MS PGothic', 'ＭＳ Ｐゴシック', IPAPGothic,'IPA P ゴシック', sans-serif;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.post-php .post div {
+  padding: 10px 0;
+}
+.post-php .post p {
+  padding: 15px 0;
+}
+.post-php .post .alignnone {
+  margin: auto;
+  display: block;
+}
+.post-php #socialbox_single {
+  width: 100%;
+  margin-top: 20px;
+}
+.post-php #socialbox_single ul li {
+  float: left;
+  margin-right: 15px;
+}
+.post-php .fb-like iframe {
+  max-width: none !important;
+}
+
+.post_nav_box {
+  text-align: center;
+  width: 100%;
+}
+.post_nav_box div {
+  display: inline-block;
+}
+.post_nav_box div a {
+  color: #231815;
+}
+.post_nav_box div a:hover {
+  color: #e4007f;
+}
+.post_nav_box .top {
+  padding: 0 20px;
+  margin: 0 20px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.post-php .designTxt {
+	color:#F1AFB2;
+}
+.post-php .teckTxt {
+	color:#9DD0CD;
+}
+.post-php .otherTxt {
+	color:#FFD24D;
+}
+.post-php .designBg {
+	background:#F1AFB2;
+	padding:15px;
+}
+.post-php .teckBg{
+	background:#9DD0CD;
+	padding:15px;
+}
+.post-php .otherBg{
+	background:#FFD24D;
+	padding:15px;
+}
+
+.post-php blockquote {
+	padding: 15px;
+	color: #707070;
+	background: url(images/blockquote.png) top left no-repeat #f1f1f1;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+.post-php  blockquote p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.post-php  table {
+width: 80%;
+border-collapse: collapse;
+margin:0 auto;
+}
+
+.post-php  table  th{
+padding: 5px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+}
+.post-php  table  td{
+padding: 5px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+border-collapse: collapse;
+}
+.post-php  .post_cat ul{
+	padding:0;
+}
+.post-php  .post_cat li{
+	list-style:none;
+	padding:0;
+}
+.post-php  ul{
+	padding-left:20px;
+}
+.post-php  li{
+	list-style:disc;
+}
+.post-php  dl{
+	margin:20px 0;
+}
+.post-php  dt{
+	font-weight:bold;
+}
+/* natasha change */
+#blog-contents .more {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+#blog-contents .more img {
+	margin: 0 0 -2px 3px;
+}
+#blog-contents article section.date {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 16px;
+}
+#blog-contents .post-php .post_meta .post_title {
+	font-size: 26px;
+	border-bottom: 2px solid #9d9d9d;
+	width: 90%;
+	margin-bottom:15px;
+}
+#blog-contents #socialbox_single iframe.twitter-share-button {
+	width: 75px!important;
+}
+#blog-contents #socialbox_single ul {
+	padding: 0;
+}
+#blog-contents .post-php .post_meta p.category {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	float:left;
+}
+#blog-contents .post-php .post_meta ul.post_cat {
+	padding: 0;
+	margin: -5px 0 0 0;
+}
+#blog-contents .post-php .post_meta .post_cat li {
+	display: inline;
+}
+#blog-contents .post-php .post_meta .post_cat li a {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+}
+#blog-contents .post-php .post_meta .post_title {
+	color: #000;
+}
