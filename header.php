@@ -30,7 +30,6 @@
 <script type="text/javascript" charset="utf-8" src="http://maps.googleapis.com/maps/api/js?&sensor=false"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/socialbutton.js?1.9.1"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/heightLine.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/change_bnr.js"></script>
 <script type="text/javascript">
 $(function() {
 
@@ -247,8 +246,7 @@ if(0 >= $("#googlemap").size()){
 <header>
 <div id="head" class="clearfix">
 <hgroup>
-<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="scoob_bnr" src="<?php echo get_stylesheet_directory_uri() ?>/images/lg_2015_01.png" height="74" width="190" alt="Scoob"></a></h1>
-<!--h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.gif" height="74" width="189" alt="Scoob"></a></h1-->
+<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.gif" height="74" width="189" alt="Scoob"></a></h1>
 <p class="kansai">FROM KANSAI</p>
 </hgroup>
 <h2 id="catch">webデザイナーのためのデザイン&テクニカルのイベント情報発信サイトです</h2>
