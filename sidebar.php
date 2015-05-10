@@ -29,10 +29,10 @@
 
 
 
-<!--
+<?php /*
 <ul class="bnrBox">
 <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/bnr_mayurin.jpg" width="280" height="60" alt="まゆりんコーナー"></a></li>
 <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/bnr_yum.jpg" width="" height="" alt="ユムさんコーナー"></a></li>
 </ul>
--->
+*/ ?>
 </div>

@@ -271,5 +271,75 @@ function create_my_taxonomies() {
     );
 }
 
+function url_exists($url) {
+  $header = get_headers($url);
+  if(strstr($header[0], '200')) return true;
+  return false;
+}
 
+
+/** カテゴリー種別を取得する */
+function get_cat_type(){
+    $cat = 'other';
+    if(in_category('design')){
+        $cat = 'art';
+    }elseif(in_category('tech')){
+        $cat = 'tech';
+    }elseif(in_category('others')){
+        $cat = 'other';
+    }
+    return $cat;
+}
+
+/** カテゴリーエリア種別を取得する */
+function get_cat_area_type(){
+    $cat_area = 'area-other';
+    if (in_category('kyoto')){
+        $cat_area = 'kyoto';
+    }elseif(in_category('osaka')){
+        $cat_area = 'osaka';
+    }elseif(in_category('hyogo')){
+        $cat_area = 'hyogo';
+    }elseif(in_category('area-other')){
+        $cat_area = 'area-other';
+    }
+    return $car_area;
+}
+
+/** 表示期間内のデータがどうか */
+function is_current_data(){
+    $the_date = types_render_field("close_date", array());
+    if($the_date == ""){
+        $the_date = types_render_field("start_date", array());
+    }
+
+    //終了日が来てないか、開始前のイベントならtrue
+    if(strtotime($the_date) >= strtotime(date_i18n("Y/m/d"))){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+/** 過去のデータかどうか */
+function is_past_data(){
+    $the_date = types_render_field("close_date", array());
+    if($the_date == ""){
+        $the_date = types_render_field("start_date", array());
+    }
+
+    //終了日が過ぎている、もしくは開始日が過ぎているイベントならtrue
+    if (strtotime($the_date) < strtotime(date_i18n("Y/m/d"))){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+/** 一記事のテンプレートを呼び出す */
+function get_loop_item($post){
+    $cat = get_cat_type();
+    $cat_area = get_cat_area_type();
+    require(dirname(__FILE__).'/loop.php');
+}
 ?>

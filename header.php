@@ -3,32 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-
-	<?php if(is_home() || is_page('redorder') || is_page('startorder')) : 
-		echo "<title>Scoob";
-		
-	elseif(is_page('kako')) :
-		echo "<title>Scoob | 過去のイベント";
-	elseif (is_page('about')) :
-		echo "<title>Scoob | About";
-	elseif (is_page('contact')) :
-		echo "<title>Scoob | Contact";
-	elseif (is_single()) :
-		
+<?php
+	$title_detail = "";
+	if(is_home() || is_page('redorder') || is_page('startorder')){
+	}elseif(is_page('kako')){
+		$title_detail = " | 過去のイベント";
+	}elseif (is_page('about')){
+		$title_detail = " | About";
+	}elseif (is_page('contact')){
+		$title_detail = " | Contact";
+	}elseif (is_single()){
 		$start_date = get_post_meta($post->ID, 'wpcf-start_date', true);
 		$close_date = get_post_meta($post->ID, 'wpcf-close_date', true);
 		$start_time = get_post_meta($post->ID, 'wpcf-start_time', true);
 		$close_time = get_post_meta($post->ID, 'wpcf-close_time', true);
-		echo "<title>Scoob | ";
-				 echo(types_render_field("start_date", array('format'=>'Y.m.d (D)')));
-				if("" != $close_date) :
-					echo("-" .types_render_field("close_date", array('format'=>'Y.m.d (D)')));
-				endif;
-				the_title(); 
-	else :
-		echo "Scoob";
-	endif; ?>
-</title>
+		$title_detail = " | ";
+		$title_detail .= types_render_field("start_date", array('format'=>'Y.m.d (D)'));
+		if("" != $close_date){
+			$title_detail .= "-" .types_render_field("close_date", array('format'=>'Y.m.d (D)'));
+		}
+		$title_detail .= the_title();
+	}
+?>
+<title>Scoob<?=$title_detail?></title>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->

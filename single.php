@@ -35,17 +35,10 @@
 	$calendar_url .= "&sf=true&output=xml";
 
 	?>
-	
+
 	<?php
-		if (in_category('design')) :
-			$cat = 'art';
-		elseif (in_category('tech')) :
-			$cat = 'tech';
-		elseif (in_category('others')) :
-			$cat = 'other';
-		else :
-			$cat = 'other';
-		endif;
+		$cat = get_cat_type();
+		//$cat_area = get_cat_area_type();
 	?>
 
 

@@ -1,2 +1,2 @@
-thema_scoob01
+theme_scoob01
 =============
