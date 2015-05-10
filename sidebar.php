@@ -17,7 +17,6 @@
 <ul class="calU clearfix"><li class="kako"><a href="<?php echo esc_url( home_url( '/' ) ); ?>kako">過去のイベントを見る</a></li></ul>
 
 <ul class="bnrBox">
-	<li style="margin:0 auto 30px;display:block;"><a href="http://2014.kansai.wordcamp.org/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/wckbnr-250x280.jpg" alt="WordCampKansai2014"></a></li>
 	<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>banner"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/bannerokiba.jpg" alt="バナー置き場"></a></li>
 	<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/bnrcontact.jpg" alt="お問い合わせ"></a></li>
 </ul>
